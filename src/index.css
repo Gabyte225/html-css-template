@@ -7,9 +7,7 @@ body{
 .header-flex{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
 }
 .green-header-box{
     width: 100%;
@@ -34,8 +32,7 @@ body{
     text-transform: uppercase;
 }
 .education-title{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -49,8 +46,6 @@ body{
     gap: 50px;
 }
 .link-block{
-    display: flex;
-    flex-direction: column;
     margin-top: 50px;
 }
 
@@ -69,13 +64,11 @@ body{
     color: #000000;
 }
 .green-hr{
-    display: flex;
     width: 72px;
     height: 10px;
     background: #7ABCAC;
 }
 .grey-hr{
-    display: flex;
     min-width: 216px;
     height: 4px;
     background: #DCDCDC;
@@ -110,7 +103,6 @@ body{
 .education-skills{
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 .grey-hr-short{
     width: 201px;
@@ -139,7 +131,6 @@ body{
 .experience-in-line{
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 .paragraph.block{
     font-weight: 500;
@@ -156,14 +147,11 @@ body{
     border-right: 2px solid #DCDCDC;
 }
 .grey-hr-long{
-    display: flex;
     width: 100%;
     height: 4px;
     background: #DCDCDC;
 }
 .grey-hr-long-gap{
-    display: flex;
-    width: 100%;
     margin-top: 30px;
     height: 4px;
     background: #DCDCDC;
@@ -171,7 +159,6 @@ body{
 .contacts-in-line{
     display: flex;
     justify-content: space-around;
-    width: 100%;
     margin-top: 50px;
 }
 .education-title{
@@ -183,8 +170,7 @@ body{
     justify-content: center;
 }
 .paragraph.links{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
