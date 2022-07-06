@@ -7,48 +7,48 @@
     <link href="./styles/index.css" rel="stylesheet" />
     <title>Tailwind sample</title>
   </head>
-  <body>
+  <body class="container font-sans max-w-[1006px] m-auto">
     <header>
-      <div class="header-flex">
-        <div class="header-flex__green"></div>
-        <div class="header-flex__title">
-          <p class="name-in-cv">Gabriele</p>
-          <p class="education-title">programmer</p>
+      <div class="flex flex-col w-[1006px] items-center">
+        <div class="w-full h-16 bg-[#7ABCAC]"></div>
+        <div class="flex flex-col items-center w-3/5 border-4 border-black py-10 mt-[-30px]">
+          <p class="font-bold text-5xl pb-7 uppercase">Gabriele urbonaite</p>
+          <p class="font-bold text-xl bg-black text-white text-center uppercase w-[248px]">programmer</p>
         </div>
       </div>
     </header>
-    <main class="media">
-      <section class="links-about">
-        <div class="links-about__link-block-1">
-          <p class="cv-title">links</p>
-          <div class="in-line-hr">
-            <div class="in-line-hr__green-hr"></div>
-            <div class="in-line-hr__grey-hr"></div>
+    <main>
+      <section class="grid grid-cols-3 my-8 gap-10">
+        <div class="">
+          <p class="uppercase font-bold text-base mb-3">links</p>
+          <div class="flex items-center  mb-5">
+            <div class="w-16 h-3 bg-[#7ABCAC]"></div>
+            <div class="w-full h-1 bg-[#DCDCDC]"></div>
           </div>
-          <div class="inline-icon-block">
-            <div class="in-line-icon">
-              <img class="icon" src="./icon/Linked-in.png" />
+          <div class="flex flex-col gap-5">
+            <div class="flex items-center">
+              <img class="mr-3" src="./icon/Linked-in.png" />
               <p class="paragraph inline">LINKEDIN/username</p>
             </div>
-            <div class="in-line-icon">
-              <img class="icon" src="./icon/Twitter.png" />
+            <div class="flex items-center">
+              <img class="mr-3" src="./icon/Twitter.png" />
               <p class="paragraph inline">TWITTER/username</p>
             </div>
-            <div class="in-line-icon">
-              <img class="icon" src="./icon/Github.png" />
+            <div class="flex items-center">
+              <img class="mr-3" src="./icon/Github.png" />
               <p class="paragraph inline">GITHUB/username</p>
             </div>
-            <div class="in-line-icon">
-              <img class="icon" src="./icon/DEV.png" />
+            <div class="flex items-center">
+              <img class="mr-3" src="./icon/DEV.png" />
               <p class="paragraph inline">DEV/username</p>
             </div>
           </div>
         </div>
-        <div class="links-about__link-block-2">
-          <p class="cv-title">about me</p>
-          <div class="in-line-hr">
-            <div class="in-line-hr__green-hr"></div>
-            <div class="in-line-hr__grey-hr-long"></div>
+        <div class="col-span-2">
+          <p class="uppercase font-bold text-base mb-3">about me</p>
+          <div class="flex items-center  mb-5">
+            <div class="w-16 h-3 bg-[#7ABCAC]"></div>
+            <div class="w-full h-1 bg-[#DCDCDC]"></div>
           </div>
           <p class="about-me">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
@@ -67,116 +67,116 @@
           </p>
         </div>
       </section>
-      <section class="education-skills">
+      <section class="grid grid-cols-3 my-8 gap-10">
         <div class="education-skills__link-block first">
-          <p class="cv-title">education</p>
-          <div class="in-line-hr">
-            <div class="in-line-hr__green-hr"></div>
-            <div class="in-line-hr__grey-hr"></div>
+          <p class="uppercase font-bold text-base mb-3">education</p>
+          <div class="flex items-center  mb-5">
+            <div class="w-16 h-3 bg-[#7ABCAC]"></div>
+            <div class="w-full h-1 bg-[#DCDCDC]"></div>
           </div>
-          <div>
-            <p class="paragraph">SCHOOL NAME</p>
-            <p class="paragraph">2011-2014</p>
-            <p class="paragraph">Degree</p>
+          <div >
+            <p class="pb-3">SCHOOL NAME</p>
+            <p class="pb-3">2011-2014</p>
+            <p class="pb-3">Degree</p>
           </div>
-          <div class="in-line-hr__grey-hr-short"></div>
+          <div class="w-7/12 h-1 bg-[#DCDCDC]"></div>
           <div>
-            <p class="paragraph">SCHOOL NAME</p>
-            <p class="paragraph">2011-2014</p>
-            <p class="paragraph">Degree</p>
+            <p class="pb-3">SCHOOL NAME</p>
+            <p class="pb-3">2011-2014</p>
+            <p class="pb-3">Degree</p>
           </div>
         </div>
         <div class="education-skills__link-block second">
-          <p class="cv-title">personal skills</p>
-          <div class="in-line-hr">
-            <div class="in-line-hr__green-hr"></div>
-            <div class="in-line-hr__grey-hr"></div>
+          <p class="uppercase font-bold text-base mb-3">personal skills</p>
+          <div class="flex items-center  mb-5">
+            <div class="w-16 h-3 bg-[#7ABCAC]"></div>
+            <div class="w-full h-1 bg-[#DCDCDC]"></div>
           </div>
           <div>
-            <p class="paragraph skills green">TEAMWORK</p>
-            <p class="paragraph skills yellow">COMMUNICATION</p>
-            <p class="paragraph skills orange">ORGANIZATION</p>
+            <p class="px-3 mb-7 rounded-xl w-fit bg-[#7ABCAC] font-bold">TEAMWORK</p>
+            <p class="px-3 mb-7 rounded-xl w-fit bg-[#D8DA79] font-bold">COMMUNICATION</p>
+            <p class="px-3 mb-7 rounded-xl w-fit bg-[#C29486] font-bold">ORGANIZATION</p>
           </div>
         </div>
         <div class="education-skills__link-block third">
-          <p class="cv-title">technical skills</p>
-          <div class="in-line-hr">
-            <div class="in-line-hr__green-hr"></div>
-            <div class="in-line-hr__grey-hr"></div>
+          <p class="uppercase font-bold text-base mb-3">technical skills</p>
+          <div class="flex items-center  mb-5">
+            <div class="w-16 h-3 bg-[#7ABCAC]"></div>
+            <div class="w-full h-1 bg-[#DCDCDC]"></div>
           </div>
           <div>
-            <p class="paragraph skills green">HTML</p>
-            <p class="paragraph skills green">CSS/SCSS</p>
-            <p class="paragraph skills yellow">JAVASCRIPT</p>
-            <p class="paragraph skills yellow">REACT.JS</p>
+            <p class="px-3 mb-7 rounded-xl w-fit bg-[#7ABCAC] font-bold">HTML</p>
+            <p class="px-3 mb-7 rounded-xl w-fit bg-[#7ABCAC] font-bold">CSS/SCSS</p>
+            <p class="px-3 mb-7 rounded-xl w-fit bg-[#D8DA79] font-bold">JAVASCRIPT</p>
+            <p class="px-3 mb-7 rounded-xl w-fit bg-[#D8DA79] font-bold">REACT.JS</p>
           </div>
         </div>
       </section>
-      <div class="education-skills__link-block">
-        <p class="cv-title">work experience</p>
-        <div class="in-line-hr">
-          <div class="in-line-hr__green-hr"></div>
-          <div class="in-line-hr__grey-hr-long"></div>
+      <div class="">
+        <p class="uppercase font-bold text-base mb-3">work experience</p>
+        <div class="flex items-center  mb-5">
+          <div class="w-16 h-3 bg-[#7ABCAC]"></div>
+          <div class="w-full h-1 bg-[#DCDCDC]"></div>
         </div>
-        <div class="experience-in-line">
-          <div class="experience-in-line__job-position first">
-            <p class="paragraph">JOB POSITION</p>
-            <p class="paragraph block">Company</p>
-            <p class="paragraph block">2018-present</p>
-            <p class="paragraph block left">
+        <div class="grid grid-cols-3 my-8 gap-8">
+          <div class="text-center px-3">
+            <p class="pb-3 font-semibold">JOB POSITION</p>
+            <p class="pb-3">Company</p>
+            <p class="pb-3">2018-present</p>
+            <p class="text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               recusandae voluptatum nihil voluptates soluta saepe quasi nostrum
               placeat corrupti facilis! corrupti facilis!
             </p>
           </div>
-          <div class="experience-in-line__job-position middle second">
-            <p class="paragraph">JOB POSITION</p>
-            <p class="paragraph block">Company</p>
-            <p class="paragraph block">2018-present</p>
-            <p class="paragraph block left">
+          <div class="text-center border-x-2 px-3">
+            <p class="pb-3 font-semibold">JOB POSITION</p>
+            <p class="pb-3">Company</p>
+            <p class="pb-3">2018-present</p>
+            <p class="text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               recusandae voluptatum nihil voluptates soluta saepe quasi nostrum
               placeat corrupti facilis! corrupti facilis!
             </p>
           </div>
-          <div class="experience-in-line__job-position last third">
-            <p class="paragraph">JOB POSITION</p>
-            <p class="paragraph block">Company</p>
-            <p class="paragraph block">2018-present</p>
-            <p class="paragraph block left">
+          <div class="text-center px-3">
+            <p class="pb-3 font-semibold">JOB POSITION</p>
+            <p class="pb-3">Company</p>
+            <p class="pb-3">2018-present</p>
+            <p class="text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               recusandae voluptatum nihil voluptates soluta saepe quasi nostrum
               placeat corrupti facilis! corrupti facilis!
             </p>
           </div>
         </div>
-        <div class="grey-hr-long-gap"></div>
+        <div class="w-full h-1 bg-[#DCDCDC]"></div>
       </div>
     </main>
     <footer>
-      <div class="contacts-in-line">
-        <div class="addres">
-          <p class="addres__education-title">location</p>
-          <p class="paragraph links">Lithuania</p>
-          <p class="paragraph links">Vilnius</p>
+      <div class="grid grid-cols-3 gap-10 justify-items-center my-8">
+        <div class="">
+          <p class="mb-3 font-bold text-xl bg-black text-white text-center uppercase w-[248px]">location</p>
+          <p class="mb-3 text-center">Lithuania</p>
+          <p class="mb-3 text-center">Vilnius</p>
         </div>
-        <div class="addres">
-          <p class="addres__education-title">contacts</p>
-          <p class="paragraph links">
+        <div class="">
+          <p class="mb-3 font-bold text-xl bg-black text-white text-center uppercase w-[248px]">contacts</p>
+          <p class="mb-3 text-center hover:text-teal-600">
             <a href="tel:+37062419707">+370XXXXXXXX</a>
           </p>
-          <p class="paragraph links">
+          <p class="mb-3 text-center hover:text-teal-600">
             <a href="mailto:gabe300@gmail.com?subject=subject text"
               >Gabriele@gmail.com</a
             >
           </p>
         </div>
-        <div class="addres">
-          <p class="addres__education-title">social</p>
-          <p class="paragraph links">
+        <div class="">
+          <p class="mb-3 font-bold text-xl bg-black text-white text-center uppercase w-[248px]">social</p>
+          <p class="mb-3 text-center hover:text-teal-600">
             <a target="_blank" href="https://linkedin.com/">LinkedIn</a>
           </p>
-          <p class="paragraph links">
+          <p class="mb-3 text-center hover:text-teal-600">
             <a target="_blank" href="https://facebook.com/">Facebook</a>
           </p>
         </div>
