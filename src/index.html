@@ -5,95 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/reset.css" rel="stylesheet" />
-    <link href="./styles/index.scss" rel="stylesheet" />
-    <title>CV Gabriele</title>
+    <link href="./styles/calculator.css" rel="stylesheet" />
+    <!-- <link href="./styles/index.scss" rel="stylesheet" /> -->
   </head>
   <body>
-    <header>
-      <div class="header">
-        <button><a href="/"><img src="./icon/Logo.svg" /></a></button>
-        <div class="header__icon">
-          <button><a href="#"><img src="./icon/Vector.png" /></a></button>
-          <button><a href="#"><img src="./icon/Bag.png" /></a></button>
-        </div>
+    <div>
+      <form class="form-calculator">
+        <input class="InputOne" type="number">
+        <input class="InputTwo" type="number">
+      </form>
+      <div class="div-calculator">
+        <button class="sum">+</button>
+        <button class="sub">-</button>
+        <button class="div">/</button>
+        <button class="mul">*</button>
+        <button class="mod">%</button>
       </div>
-    </header>
-    <main>
-      <div class="image-card-inline">
-        <section class="image">
-          <div class="image__big">
-            <img src="./image/Big.png" />
-          </div>
-          <div class="image__small--inline">
-            <img src="./image/Small.png" />
-            <img src="./image/Small.png" />
-          </div>
-        </section>
-        <section class="thuja-card">
-          <h2 class="thuja-card__header">Beautiful Emerald Thuja</h2>
-          <div class="price">
-            <p>$35.99</p>
-            <p>$25.00</p>
-            <p class="price__blue">Sale</p>
-          </div>
-          <p>Size:</p>
-          <div class="size">
-            <button class="size__black">0.50m</button>
-            <button class="size__border">0.70m</button>
-            <button class="size__border">0.90m</button>
-          </div>
-          <div class="quantity">
-            <p>Quantity:</p>
-            <input type="number" id="number" />
-          </div>
-          <button class="border-button">Add to Cart</button>
-          <button class="black-button">Buy it Now</button>
-          <div class="paragraph">
-            <p>Minions ipsum bee do bee do bee do underweaaar butt tulaliloo pepete jiji. Bee do bee do bee do hana dul sae poulet tikka masala.</p>
-            <p>Minions ipsum bee do bee do bee do underweaaar butt tulaliloo pepete jiji. Bee do bee do bee do hana dul sae poulet tikka masala poopayee para tú gelatooo ti aamoo! Hahaha wiiiii. Tulaliloo pepete me want bananaaa! Daa potatoooo tulaliloo. Poulet tikka masala hahaha daa tulaliloo bappleees bananaaaa. Daa underweaaar tulaliloo poopayee bappleees belloo! Hahaha tulaliloo ti aamoo! Tank yuuu! poopayee pepete jeje uuuhhh hana dul sae baboiii tank yuuu! Tatata bala tu. Jeje po kass wiiiii underweaaar ti aamoo! Jiji bananaaaa. Poulet tikka masala hana dul sae chasy underweaaar ti aamoo! Tank yuuu! Jeje  Poulet tikka masala hahaha daa tulaliloo bappleees bananaaaa.</p>
-          </div>
-          <div class="backrount-hr"></div>
-          <div class="info">
-            <img src="./icon/Material.png" />
-            <p>Materials</p>
-            <button><img src="./icon/arrow.png"></button>
-          </div>
-          <div class="backrount-hr"></div>
-          <div class="info">
-            <img src="./icon/Shipping.png" />
-            <p>Shipping & Returns</p>
-            <button><img src="./icon/arrow.png"></button>
-          </div>
-          <div class="backrount-hr"></div>
-          <div class="info">
-            <img src="./icon/Dimentions.png" />
-            <p>Dimensions</p>
-            <button><img src="./icon/arrow.png"></button>
-          </div>
-          <div class="backrount-hr"></div>
-        </section>
-      </div>
-      <section class="oasis-card">
-        <div class="oasis-card__inline">
-          <div class="oasis-card__inline--text">
-            <h3>Create your personal oasis </h3>
-            <p>Minions ipsum tulaliloo aaaaaah hana dul sae bananaaaa tulaliloo tank yuuu! Tulaliloo daa jiji poopayee.</p>
-          </div>
-          <div class="oasis-card__inline--image">
-            <img src="./image/Oasis.png"/>
-          </div>
-        </div>
-      </section>
-      <section class="text">
-        <p>Minions ipsum bee do bee do bee do underweaaar butt tulaliloo pepete jiji. Bee do bee do bee do hana dul sae poulet tikka masala poopayee para tú gelatooo ti aamoo! Hahaha wiiiii. Tulaliloo pepete me want bananaaa! Daa potatoooo tulaliloo. Poulet tikka masala hahaha daa tulaliloo bappleees bananaaaa. </p>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <p>We care about your garden. Copyright © 2019–2022 magic-garden.test</p>
-        <img src="./image/Group.png"/>
-      </div>
-    </footer>
+      <div class="result"></div><button class="clear">Clear</button>
+    </div>
   </body>
-  <script src="event.js"></script>
+  <script src="calculator.js"></script>
 </html>
