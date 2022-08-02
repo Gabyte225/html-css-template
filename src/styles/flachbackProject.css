@@ -25,8 +25,13 @@ body{
     font-size: 30px;
 }
 .result{
-    width: 100px;
-    height: 30px;
+    font-family: monospace;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
     border: 1px solid black;
     margin-top: 10px;
 }
