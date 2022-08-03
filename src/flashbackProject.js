@@ -19,7 +19,7 @@ document.querySelector(".pyramid").addEventListener("click", () => {
     for (let j = 1; j <= n - i; j++) {
       pyramid += "&nbsp";
       }
-    for (let k = 0; k < 1 * i - 1; k++) {
+    for (let k = 0; k < i - 1; k++) {
       pyramid += "* ";
     }
     pyramid += "</br>";
@@ -34,7 +34,7 @@ document.querySelector(".reverse").addEventListener("click", () => {
     for (let j = 0; j < i; j++) {
       reverse += "&nbsp";
       }
-    for (let k = 0; k < 1 * (n - i) - 1; k++) {
+    for (let k = 0; k < (n - i) - 1; k++) {
       reverse += "* ";
     }
     reverse += "</br>";
