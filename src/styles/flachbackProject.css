@@ -2,27 +2,7 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-.form-calculator{
-    margin-top: 100px;
-}
-.InputOne, .InputTwo{
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-.div-calculator{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.sum, .sub, .div, .mul, .mod{
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
 }
 .result{
     font-family: monospace;
