@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/reset.css" rel="stylesheet" />
-    <link href="./styles/flachbackProject.css" rel="stylesheet" />
+    <link href="./styles/localStorage.css" rel="stylesheet" />
     <!-- <link href="./styles/index.scss" rel="stylesheet" /> -->
   </head>
   <body>
-    <div>
+    <div class="card">
       <div class="actions">
-        <button name="triangle" class="triangle">Triangle</button>
-        <button name="pyramid" class="pyramid">Pyramid</button>
-        <button name="reverse" class="reverse">Reverse Pyramid</button>
-        <button name="diamond" class="diamond">Diamond</button>
+        <label for="name">Full Name</label>
+        <Input class="name" title="name" type="text"></Input>
+        <label for="email">Email</label>
+        <Input class="email" title="email" type="email"></Input>
+        <label for="phone">Phone</label>
+        <Input class="phone" title="phone" type="tel"></Input>
+        <label for="address">Address</label>
+        <Input class="address" title="address" type="text"></Input>
+        <label for="services">Job/Services</label>
+        <Input class="services" title="services" type="text"></Input>
+        <button name="Submit" class="Submit">Submit</button>
       </div>
       <div class="result"></div>
-      <button name="clear" class="clear">Clear</button>
     </div>
-    <script src="flashbackProject.js"></script>
+    <script src="localStorage.js"></script>
   </body>
 </html>
