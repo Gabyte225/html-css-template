@@ -4,8 +4,6 @@ const phone = document.querySelector('.phone');
 const address = document.querySelector('.address');
 const services = document.querySelector('.services');
 
-// let content = document.querySelector(".result");
-
 document.querySelector(".Submit").addEventListener("click", () => {
   let newName = document.createElement('div');
   document.querySelector(".result").appendChild(newName);
