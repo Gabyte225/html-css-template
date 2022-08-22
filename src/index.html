@@ -7,62 +7,18 @@
     <link href="./styles/reset.css" rel="stylesheet" />
     <link href="./styles/localStorage.css" rel="stylesheet" />
     <!-- <link href="./styles/index.scss" rel="stylesheet" /> -->
-    <script defer src="localStorage.js"></script>
+    <script defer src="guestList.js"></script>
   </head>
   <body>
-    <div class="card">
-      <div class="actions">
-        <label for="name">Full Name</label>
-        <Input class="name" title="name" type="text"></Input>
-        <label for="email">Email</label>
-        <Input class="email" title="email" type="email"></Input>
-        <label for="phone">Phone</label>
-        <Input class="phone" title="phone" type="tel"></Input>
-        <label for="address">Address</label>
-        <Input class="address" title="address" type="text"></Input>
-        <label for="services">Job/Services</label>
-        <Input class="services" title="services" type="text"></Input>
-        <button name="Submit" class="Submit">Submit</button>
+    <div id="content">
+      <div class="input">
+        <input id="listInput" type="text">
+        <!-- <button id="add">Add</button> -->
       </div>
-      <div class="result"></div>
+      <div class="guest-list">
+        <ul>
+        </ul>
+      </div>
     </div>
-  </body>
+</body>
 </html>
-<!-- Dėstytojo--------------------------------- -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="/index.js" defer></script>
-  </head>
-  <body>
-    <main id="app">
-      <form id="card-inputs">
-        <div>
-          <label for="name">Name</label>
-          <input name="name" type="text" id="name" />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input name="email" type="email" id="email" />
-        </div>
-        <div>
-          <label for="phone">Phone</label>
-          <input name="phone" type="tel" id="phone" />
-        </div>
-        <div>
-          <label for="address">Address</label>
-          <input name="address" type="address" id="address" />
-        </div>
-        <div>
-          <label for="service">Service</label>
-          <input name="service" type="text" id="service" />
-        </div>
-        <button type="submit">Save</button>
-      </form>
-    </main>
-  </body>
-</html> -->

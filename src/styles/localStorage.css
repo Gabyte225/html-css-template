@@ -4,26 +4,21 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.actions{
-    display: flex;
-    flex-direction: column;
+#content{
+    margin-top: 50px;
+
 }
-.card{
+.input{
     display: flex;
-    width: 600px;
-    padding: 20px;
-    border: 1px solid black;
-    gap: 30px;
 }
-.result{
-    font-family: monospace;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 350px;
-    border: 1px solid black;
-    margin-top: 10px;
+.guest-sist{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style: circle;
+}
+button{
+    margin-left: 10px;
 }
