@@ -1,15 +1,18 @@
 const listInput = document.querySelector('#listInput');
 let inputButtons = document.querySelector('.input');
-const list = document.querySelector('ul');
+const list = document.querySelector('.guest-list');
+
+let ulList = document.createElement('ul');
+list.appendChild(ulList);
 
 let guestListArr = [];
 
 function addGuest(){
-    if(guestListArr === ''){
-        return;
+    if(guestListArr.length){
+        const template = document.createElement("li");
+        template.textContent = listInput.value;
+        ulList.appendChild(template);
     }
-    let template = guestListArr.map(guest => `<li>${guest}</li>`).join('\n');
-    list.innerHTML = template;
 }
 addGuest();
 
