@@ -17,23 +17,35 @@ function render() {
 document.querySelector("#list-actions").addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
     switch (e.target.name) {
-      case "to-start":
-        guests.unshift(input.value);
-        break;
-      case "to-end":
-        guests.push(input.value);
-        break;
-      case "remove-start":
-        guests.shift();
-        break;
-      case "remove-end":
-        guests.pop();
-        break;
-      case "reverse":
-        guests.reverse();
-        break;
-      default:
-        break;
+        case "to-start":
+            guests.unshift(input.value);
+            break;
+        case "to-end":
+            guests.push(input.value);
+            break;
+        case "remove-start":
+            guests.shift();
+            break;
+        case "remove-end":
+            guests.pop();
+            break;
+        case "reverse":
+            guests.reverse();
+            break;
+        case "sort-a-z":
+            guests.sort();
+            break;
+        case "sort-z-a":
+            guests.sort((a, z) => {
+                if (a > z)
+                    return -1;
+                if (a < z)
+                    return 1;
+                return 0;
+            });
+            break;
+        default:
+            break;
     }
     render();
   }
