@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./styles/reset.css" rel="stylesheet" />
-    <link href="./styles/localStorage.css" rel="stylesheet" />
-    <script defer src="guestList.js"></script>
+    <title>Document</title>
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <div id="content">
-      <div class="input">
-        <input id="listInput" type="text">
+    <main id="app">
+      <div id="list-actions">
+        <input placeholder="guest name" type="text" name="guest-name" />
+        <button type="button" name="to-start">Add to Start</button>
+        <button type="button" name="to-end">Add to End</button>
+        <button type="button" name="remove-start">Remove from Start</button>
+        <button type="button" name="remove-end">Remove from End</button>
+        <button type="button" name="reverse">Reverse</button>
       </div>
-      <div class="guest-list">
-      </div>
-    </div>
-</body>
+    </main>
+  </body>
 </html>
