@@ -37,11 +37,7 @@ document.querySelector("#list-actions").addEventListener("click", (e) => {
             break;
         case "sort-z-a":
             guests.sort((a, z) => {
-                if (a > z)
-                    return -1;
-                if (a < z)
-                    return 1;
-                return 0;
+                return z.localeCompare(a);
             });
             break;
         default:
