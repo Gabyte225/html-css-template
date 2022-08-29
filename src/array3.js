@@ -1258,4 +1258,4 @@ const attending = [
     }
   ];
 
-  console.log(attending.some(item => item.attending));
+console.log(attending.some(item => item.attending));
