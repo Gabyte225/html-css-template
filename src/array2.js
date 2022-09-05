@@ -1259,10 +1259,8 @@ const plusOne = [
   ];
 
 
-const attendingTtue = plusOne.filter((att) => {
+plusOne.filter((att) => {
     return att.attending;
+}).every((att) => {
+    return console.log(att.plusOne);
 })
-if(attendingTtue){
-    console.log(plusOne.every((guest) => guest.plusOne));
-}   
-   
